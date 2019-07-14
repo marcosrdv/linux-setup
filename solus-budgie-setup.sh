@@ -1,4 +1,5 @@
 #!/bin/bash
+# Solus 4.0 Budgie setup script
 
 sudo eopkg upgrade
 sudo clr-boot-manager set-timeout 9 && sudo clr-boot-manager update
