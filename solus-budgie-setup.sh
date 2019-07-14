@@ -13,4 +13,3 @@ sudo eopkg it intel-microcode mc vim psensor htop xpad p7zip dia flameshot  simp
 
 df -h
 sudo sensors-detect
-
