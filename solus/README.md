@@ -1,3 +1,3 @@
-# linux-setup
+# solus-setup
 
-Bash scripts and files to setup different Linux distros
+Bash scripts and files to setup Solus Budgie Linux
