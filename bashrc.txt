@@ -1,4 +1,4 @@
-source /usr/share/defaults/etc/profile
+# addtions to .bashrc
 
 export PS1="\[\e[93m\][\[\e[m\]\[\e[92m\]\u\[\e[m\]\[\e[93m\]@\[\e[m\]\[\e[94m\]\h\[\e[m\] \w\[\e[93m\]]\[\e[m\]\[\e[91m\]\\$\[\e[m\] "
 
@@ -7,4 +7,3 @@ alias up='cd ..'
 alias del='rm -R'
 alias sync='rsync -uva'
 alias untgz='tar xvzf'
-
