@@ -9,7 +9,8 @@ sudo eopkg bi --ignore-safety https://raw.githubusercontent.com/solus-project/3r
 sudo eopkg it mscorefonts*.eopkg
 sudo eopkg it intel-microcode mc psensor terminator vim htop xpad p7zip dia flameshot  simplenote freeplane liferea pidgin gimp  openjdk-8 openjdk-8-devel openjfx-8 ruby r fpc sed gawk git git-extras git-cola python-ipython python3-ipython scipy numpy matplotlib python-seaborn texlive gnome-latex gnome-latex-docs geany geany-plugins geany-themes atom bluefish brackets codeblocks vscode zsh openssh fish  budgie-shutdown-timer zim libreoffice-all opera-stable thunderbird etcher bookworm ffmpeg handbrake simplescreenrecorder  desmume dolphin-emu dolphin-emu dosbox mgba snes9x-gtk VisualBoyAdvance-M -y
 
-# sudo eopkg it dropbox texlive-all okular peek texstudio calibre retroarch pcsx2 pcsxr ppsspp retroarch #google-chrome-stable
+# sudo eopkg it dropbox texlive-all okular peek texstudio calibre retroarch pcsx2 pcsxr ppsspp
+#google-chrome-stable
 
 df -h
 sudo sensors-detect
