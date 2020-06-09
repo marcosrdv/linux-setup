@@ -15,3 +15,9 @@ sudo apt-get install build-essential idle idle3 ipython3 jupyter ruby openjdk-8-
 # Set Ubuntu to local time rather than the default of UTC
 #sudo timedatectl set-local-rtc 1 --adjust-system-clock
 
+# change grub to save last selection and set it as default
+#sudo nano /etc/default/grub
+# add the lines below
+#GRUB_DEFAULT=saved
+#GRUB_SAVEDEFAULT=true
+#sudo update-grub
