@@ -1,0 +1,1 @@
+apt install vim synaptic build-essential fish geany geany-plugins gawk gawk-doc firefox-esr ssh bluefish fish wget zip unzip p7zip-full sed recordmydesktop git git-doc git-extras git-hub finger stterm shutter gimp openjdk-8-doc openjdk-8-jdk openjdk-8-source libreoffice evince idle3 ruby -y
