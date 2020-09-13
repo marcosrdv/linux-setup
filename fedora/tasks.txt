@@ -1,0 +1,6 @@
+##
+# https://forums.fedoraforum.org/showthread.php?319350-Reducing-swappiness
+# https://wiki.archlinux.org/index.php/Fstab
+#
+sudo xed /etc/sysctl.d/99-sysctl.conf   # add: vm.swappiness = 10
+sudo xed /etc/fstab                     #replace: defaults with noatime for root, home
