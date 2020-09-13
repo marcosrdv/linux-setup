@@ -3,7 +3,7 @@
 # https://wiki.archlinux.org/index.php/Fstab
 #
 sudo xed /etc/sysctl.d/99-sysctl.conf   # add: vm.swappiness = 10
-sudo xed /etc/fstab                     #replace: defaults with noatime for root, home
+sudo xed /etc/fstab                     # replace: defaults with noatime for root, home
 #
 # https://docs.fedoraproject.org/en-US/quick-docs/installing-chromium-or-google-chrome-browsers/
 # Click the following link: https://www.google.com/chrome/browser/desktop/index.html .
