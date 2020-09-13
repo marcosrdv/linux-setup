@@ -10,5 +10,5 @@ sudo xed /etc/fstab                     # replace: defaults with noatime for roo
 # Click on Download Chrome and select Fedora 64 or 32 bits download and install the repo.
 # Login as root and use the command to install Google Chrome:
 # dnf install google-chrome
-
-
+# disable selinux - https://docs.fedoraproject.org/en-US/Fedora/13/html/Security-Enhanced_Linux/sect-Security-Enhanced_Linux-Enabling_and_Disabling_SELinux-Disabling_SELinux.html
+sudo vim /etc/selinux/config
