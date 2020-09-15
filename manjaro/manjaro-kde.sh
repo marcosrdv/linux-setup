@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-sudo pacman -Syu vim neofetch mc xsensors ipython codeblocks fpc pamac octopi okular calligra libreoffice-still gimp freemind krita opera pdfsam texmaker texlive-core falkon opera chromium netbeans codeblocks geany geany-plugins bluefish clementine 
+sudo pacman -Syu vim neofetch mc xsensors ipython codeblocks fpc pamac octopi okular calligra libreoffice-still gimp freemind krita opera pdfsam texmaker texlive-core falkon opera chromium netbeans codeblocks geany geany-plugins bluefish clementine fceux desmume snes9x zsnes mgba-qt
 
 # build ttf-ms-fonts
 # sudo visudo
