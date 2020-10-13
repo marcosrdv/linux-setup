@@ -2,6 +2,8 @@
 
 Bash scripts and files to setup different Linux distros
 
+https://ostechnix.com/install-development-tools-linux/
+
 Enable fractional scaling on Gnome:
 
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
