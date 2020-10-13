@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 sudo pacman -S base-devel
-sudo pacman -Syu vim neofetch mc xsensors ipython codeblocks fpc pamac octopi okular calligra libreoffice-still gimp freemind krita opera pdfsam texmaker texlive-core falkon opera chromium netbeans codeblocks geany geany-plugins bluefish clementine fceux desmume snes9x zsnes mgba-qt yabause-qt gens-gs vbam-wx byuu dosbox higan mednafen snes9x-gtk alacritty gitg github-cli 
+sudo pacman -Syu vim neofetch mc xsensors ipython codeblocks fpc pamac octopi okular calligra libreoffice-still gimp freemind krita opera pdfsam texmaker texlive-core falkon opera chromium netbeans codeblocks geany geany-plugins bluefish clementine fceux desmume snes9x zsnes mgba-qt yabause-qt gens-gs vbam-wx byuu dosbox higan mednafen snes9x-gtk alacritty gitg github-cli freeoffice konversation neofetch htop 
 
 # build ttf-ms-fonts
 # sudo visudo
