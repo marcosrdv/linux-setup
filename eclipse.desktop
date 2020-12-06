@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=2020.09
+Name=Eclipse
+Comment=Eclipse IDE
+Exec=/home/marcos/eclipse/eclipse
+Path=/home/marcoseclipse/
+Icon=/home/marcos/eclipse/icon.xpm
+Terminal=false
+Type=Application
+Categories=Utility;Application;Development;
