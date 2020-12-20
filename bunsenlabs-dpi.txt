@@ -1,0 +1,28 @@
+https://forums.bunsenlabs.org/viewtopic.php?id=3047
+https://wiki.archlinux.org/index.php/xorg#Display_size_and_DPI
+https://forums.bunsenlabs.org/viewtopic.php?id=6906
+
+xdpyinfo | grep -B 2 resolution
+
+If it is eg 144, then try setting
+
+xrandr --dpi 144
+
+If that works then add it to the xrandr command in the .screenlayout script.
+
+You might also look in your ~/.Xresources file and change
+
+!Xft.dpi: 96
+
+to
+
+Xft.dpi: 144
+
+GRUB
+
+sudo vim /etc/default/grub
+
+GRUB_DEFAULT=saved
+GRUB_SAVEDEFAULT=true
+
+sudo update-grub
