@@ -7,4 +7,5 @@ alias up='cd ..'
 alias del='rm -R'
 alias sync='rsync -uva'
 alias untgz='tar xvzf'
+alias inst='sudo dnf install'
 
