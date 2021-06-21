@@ -83,7 +83,7 @@ override-redirect = false
 bottom = false
 fixed-center = true
 width = 100%
-height = 32
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 
@@ -112,17 +112,16 @@ module-margin-left = 3
 module-margin-right = 3
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "Noto Sans:size=12;0"
-font-1 = "FontAwesome:size=12;0"
-font-2 = "Noto Sans:size=12;0"
-font-3 = "Noto Sans Mono:size=12;0"
+font-0 = "Noto Sans:size=14;0"
+font-1 = "FontAwesome:size=14;0"
+font-2 = "Noto Sans:size=14;0"
+font-3 = "Noto Sans Mono:size=14;0"
 
 modules-left = i3 xwindow
-;modules-center = kernel
-modules-right = memory2 cpu2 temperature2 battery date
+modules-center = kernel
+modules-right = memory2 cpu2 date
 
-#separator = |
-separator = 
+separator = |
 
 ;dim-value = 1.0
 
@@ -179,7 +178,7 @@ override-redirect = false
 bottom = true
 fixed-center = true
 width = 100%
-height = 32
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 
@@ -208,10 +207,10 @@ module-margin-left = 3
 module-margin-right = 3
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "Noto Sans:size=12;0"
-font-1 = "FontAwesome:size=12;0"
-font-2 = "Noto Sans:size=12;0"
-font-3 = "Noto Sans Mono:size=12;0"
+font-0 = "Noto Sans:size=14;0"
+font-1 = "FontAwesome:size=14;0"
+font-2 = "Noto Sans:size=14;0"
+font-3 = "Noto Sans Mono:size=14;0"
 
 modules-left = load-average
 modules-center = networkspeeddown networkspeedup
@@ -267,7 +266,7 @@ cursor-scroll =
 monitor = ${env:MONITOR}
 ;monitor-fallback = HDMI1
 width = 100%
-height = 32
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -299,10 +298,10 @@ module-margin-right = 3
 enable-ipc = true
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "Noto Sans:size=10;0"
-font-1 = "FontAwesome:size=10;0"
-font-2 = "Noto Sans:size=10;0"
-font-3 = "Noto Sans Mono:size=10;0"
+font-0 = "Noto Sans:size=12;0"
+font-1 = "FontAwesome:size=12;0"
+font-2 = "Noto Sans:size=12;0"
+font-3 = "Noto Sans Mono:size=12;0"
 
 modules-left = ewmh xwindow
 modules-center = kernel
@@ -329,7 +328,7 @@ tray-background = ${colors.background}
 monitor = ${env:MONITOR}
 ;monitor-fallback = HDMI1
 width = 100%
-height = 32
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -390,7 +389,7 @@ modules-right = filesystem
 monitor = ${env:MONITOR}
 ;monitor-fallback = HDMI1
 width = 100%
-height = 32
+height = 40
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -425,13 +424,13 @@ module-margin-left = 3
 module-margin-right = 3
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "Noto Sans:size=10;0"
-font-1 = "FontAwesome:size=13;0"
-font-2 = "Noto Sans:size=10;0"
-font-3 = "Noto Sans Mono:size=10;0"
+font-0 = "Noto Sans:size=14;0"
+font-1 = "FontAwesome:size=14;0"
+font-2 = "Noto Sans:size=14;0"
+font-3 = "Noto Sans Mono:size=14;0"
 
 modules-left = bspwm xwindow
-modules-center = kernel
+### modules-center = kernel
 modules-right = pavolume memory2 cpu2 date
 
 tray-detached = false
@@ -457,7 +456,7 @@ scroll-down = bspwm-deskprev
 monitor = ${env:MONITOR}
 ;monitor-fallback = HDMI1
 width = 100%
-height = 32
+height = 40
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -492,10 +491,10 @@ module-margin-left = 3
 module-margin-right = 3
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "Noto Sans:size=10;0"
-font-1 = "FontAwesome:size=13;0"
-font-2 = "Noto Sans:size=10;0"
-font-3 = "Noto Sans Mono:size=10;0"
+font-0 = "Noto Sans:size=14;0"
+font-1 = "FontAwesome:size=14;0"
+font-2 = "Noto Sans:size=14;0"
+font-3 = "Noto Sans Mono:size=14;0"
 
 modules-left = load-average
 modules-center = networkspeeddown networkspeedup
@@ -524,7 +523,7 @@ scroll-down = bspwm-deskprev
 monitor = ${env:MONITOR}
 ;monitor-fallback = HDMI1
 width = 100%
-height = 32
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -591,7 +590,7 @@ scroll-down = herbstclient use_index +1
 monitor = ${env:MONITOR}
 ;monitor-fallback = HDMI1
 width = 100%
-height = 32
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -659,7 +658,7 @@ monitor = ${env:MONITOR}
 monitor-strict = false
 override-redirect = false
 width = 100%
-height = 32
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -691,10 +690,10 @@ module-margin-right = 3
 enable-ipc = true
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "Noto Sans:size=10;0"
+font-0 = "Noto Sans:size=13;0"
 font-1 = "FontAwesome:size=13;0"
-font-2 = "Noto Sans:size=10;0"
-font-3 = "Noto Sans Mono:size=10;0"
+font-2 = "Noto Sans:size=13;0"
+font-3 = "Noto Sans Mono:size=13;0"
 font-4 = "FontAwesome5Brands:size=13;0"
 
 modules-left = ewmh
@@ -723,7 +722,7 @@ monitor = ${env:MONITOR}
 monitor-strict = false
 override-redirect = false
 width = 100%
-height = 32
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -755,10 +754,10 @@ module-margin-right = 3
 enable-ipc = true
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "Noto Sans:size=10;0"
+font-0 = "Noto Sans:size=13;0"
 font-1 = "FontAwesome:size=13;0"
-font-2 = "Noto Sans:size=10;0"
-font-3 = "Noto Sans Mono:size=10;0"
+font-2 = "Noto Sans:size=13;0"
+font-3 = "Noto Sans Mono:size=13;0"
 font-4 = "FontAwesome5Brands:size=13;0"
 
 modules-left = load-average
@@ -785,7 +784,7 @@ modules-right = filesystem
 monitor = ${env:MONITOR}
 ;monitor-fallback = HDMI1
 width = 100%
-height = 32
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -851,7 +850,7 @@ scroll-down = spectrwm-deskprev
 monitor = ${env:MONITOR}
 ;monitor-fallback = HDMI1
 width = 100%
-height = 32
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -917,7 +916,7 @@ scroll-down = cwm-deskprev
 monitor = ${env:MONITOR}
 ;monitor-fallback = HDMI1
 width = 100%
-height = 32
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -983,7 +982,7 @@ scroll-down = cwm-deskprev
 monitor = ${env:MONITOR}
 ;monitor-fallback = HDMI1
 width = 100%
-height = 32
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -1049,7 +1048,7 @@ scroll-down = fvwm3-deskprev
 monitor = ${env:MONITOR}
 ;monitor-fallback = HDMI1
 width = 100%
-height = 32
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -1158,18 +1157,18 @@ fuzzy-match = false
 
 ;extra icons to choose from
 ;http://fontawesome.io/cheatsheet/
-;       v           
+;       v     
 
 ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
 ws-icon-6 = 7;
 ws-icon-7 = 8;
-ws-icon-8 = 9;
-ws-icon-9 = 10;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
 ws-icon-default = " "
 
 ; Available tags:
@@ -1241,14 +1240,14 @@ enable-scroll = true
 reverse-scroll = true
 pin-workspaces = true
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;
-ws-icon-6 = 7;
-ws-icon-7 = 8;
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
 ws-icon-8 = 9;
 ws-icon-9 = 10;
 ws-icon-default = " "
@@ -1501,8 +1500,7 @@ format-padding = 2
 ;   %percentage% (default) - total cpu load
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
-#label = Cpu %percentage:3%%
-label = %percentage:3%%
+label = Cpu %percentage:3%%
 
 ################################################################################
 
@@ -1513,17 +1511,16 @@ type = internal/date
 interval = 5
 ; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
 ; NOTE: if you want to use syntax tags here you need to use %%{...}
-date = " %d-%m-%Y"
-date-alt = " %Y-%m-%d%"
+date = " %Y-%m-%d%"
+date-alt = " %d-%m-%Y"
 time = %H:%M
 time-alt = %H:%M
-#format-prefix = " "
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = #c1941a
 format-underline = #c1941a
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-label = %date%  %time%
+label = %date% %time%
 
 #################################################################
 
@@ -1727,10 +1724,8 @@ interval = 1
 ;   %mb_total%
 label = %percentage_used%%
 
-#format = Mem <label>
-format = <label>
-#format-prefix = "  "
-format-prefix = "  "
+format = Mem <label>
+format-prefix = "  "
 format-prefix-foreground = #3384d0
 format-underline = #3384d0
 format-foreground = ${colors.foreground}
@@ -2010,8 +2005,7 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 format-underline = #C1B93E
 format-prefix-foreground = #C1B93E
-label =  %output:0:150:%
-;
+label =  %output:0:150:%
 
 ################################################################################
 
