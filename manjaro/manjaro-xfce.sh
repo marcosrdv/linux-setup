@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-sudo pacman -Syu base-devel vim neovim neofetch mc xsensors ipython fpc libreoffice-fresh gimp freemind opera etcher chromium netbeans codeblocks geany geany-plugins bluefish fceux desmume snes9x zsnes mgba-qt yabause-gtk gens-gs vbam-wx byuu dosbox higan mednafen snes9x-gtk gitg github-cli hexchat neofetch htop rxvt-unicode xterm alacritty kitty tilix dmenu ranger rofi openssh auto-cpufreq lm_sensors tlp tlp-rdw yay meld cpu-x
+sudo pacman -Syu base-devel vim neovim neofetch mc xsensors ipython fpc libreoffice-fresh gimp freemind opera opera-ffmpeg-codecs etcher chromium netbeans codeblocks geany geany-plugins bluefish fceux desmume snes9x zsnes mgba-qt yabause-gtk gens-gs vbam-wx byuu dosbox higan mednafen snes9x-gtk gitg github-cli hexchat neofetch htop rxvt-unicode xterm alacritty kitty tilix dmenu ranger rofi openssh auto-cpufreq lm_sensors tlp tlp-rdw yay meld cpu-x ffmpeg --noconfirm
 
 # yay -Sy ttf-ms-fonts
 # sudo visudo
