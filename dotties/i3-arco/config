@@ -388,7 +388,7 @@ font pango: Hack 16, FontAwesome 16
 #assign [class="Vlc|vlc"]                                                            → 6
 
 # Workspace 7 virtual machines and settings
-#assign [class="Vmplayer|VirtualBox"]						    → 7
+#assign [class="Vmplayer|VirtualBox"]						    					 → 7
 
 # Workspace 8 file managers
 #assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"]                                 → 8
@@ -414,7 +414,7 @@ font pango: Hack 16, FontAwesome 16
 exec --no-startup-id dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 
 # Autotiling
-exec_always --no-startup-id autotiling
+#exec_always --no-startup-id autotiling
 
 #browser
 #exec --no-startup-id vivaldi-stable
