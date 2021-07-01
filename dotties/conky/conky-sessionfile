@@ -1,1 +1,0 @@
-conky -c /home/marcos/.config/conky/Arco-Def-Cal.conkyrc & sleep 1s
