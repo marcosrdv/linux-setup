@@ -94,23 +94,21 @@ set $firstMonitor HDMI1
 set $secondMonitor HDMI1
 ###set $secondMonitor HDMI2
 
-##################################################################################
-###########################   Workspace names   ##################################
-### to display names or symbols instead of plain workspace numbers you can use ###
+# Workspace names
+# to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
 #					    
-
-set $ws1 "1 "
-set $ws2 "2 "
-set $ws3 "3 "
-set $ws4 "4 "
-set $ws5 "5 "
-set $ws6 "6 "
-set $ws7 "7 "
-set $ws8 "8 "
-set $ws9 "9 "
-set $ws10 "X "
+set $ws1 "1:"
+set $ws2 "2:"
+set $ws3 "3:"
+set $ws4 "4:"
+set $ws5 "5:"
+set $ws6 "6:"
+set $ws7 "7:"
+set $ws8 "8:"
+set $ws9 "9:"
+#set $ws10 "10:"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -122,7 +120,7 @@ bindsym $mod+6 workspace $ws6
 bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
-bindsym $mod+0 workspace $ws10
+#bindsym $mod+0 workspace $ws10
 
 # Move focused container to workspace
 bindsym $mod+Ctrl+1 move container to workspace $ws1
@@ -134,7 +132,7 @@ bindsym $mod+Ctrl+6 move container to workspace $ws6
 bindsym $mod+Ctrl+7 move container to workspace $ws7
 bindsym $mod+Ctrl+8 move container to workspace $ws8
 bindsym $mod+Ctrl+9 move container to workspace $ws9
-bindsym $mod+Ctrl+0 move container to workspace $ws10
+#bindsym $mod+Ctrl+0 move container to workspace $ws10
 
 # Move to workspace with focused container
 bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
@@ -146,8 +144,13 @@ bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
-bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
+#bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
 
+# Open applications on specific workspaces
+# assign [class="Thunderbird"] $ws1
+# assign [class="Pale moon"] $ws2
+# assign [class="Pcmanfm"] $ws3
+# assign [class="Skype"] $ws5
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 2
@@ -184,7 +187,7 @@ for_window [class="Xfburn"] floating enable
 #####################################################################################################################
 
 # start dmenu
-bindsym $mod+d exec --no-startup-id dmenu_run -b -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=24'
+bindsym $mod+d exec --no-startup-id dmenu_run -b -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=20'
 
 # gmrun
 bindsym mod1+F2 exec --no-startup-id gmrun
@@ -338,6 +341,7 @@ bindsym $mod+s layout stacking
 bindsym $mod+z layout tabbed
 bindsym $mod+e layout toggle split
 
+
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
@@ -399,7 +403,7 @@ bindsym $mod+Mod1+Ctrl+Left resize grow width 1 px or 1 ppt
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # choose your font
-font pango: Hack 16
+font pango: Hack 16, FontAwesome 16
 
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
@@ -415,28 +419,14 @@ default_floating_border normal
 # Hide borders
 #hide_edge_borders none
 
-title_align center
+
 
 #####################################################################################################################
-#################                          assign applications to workspaces                        #################
+#################                          assign applications to workspaces                       #################
 #####################################################################################################################
 
 # Assign application to start on a specific workspace
 # you can find the class with the program xprop
-
-
-assign [class="Alacritty"] $ws1
-assign [class="Urxvt"] $ws1
-assign [class="Termite"] $ws1
-assign [class="Thunar"] $ws2
-assign [class="Pcmanfm"] $ws2
-assign [class="Geany"] $ws3
-assign [class="Mousepad"] $ws4
-assign [class="libreoffice*"] $ws5
-assign [class="firefox"] $ws6
-assign [class="Chromium"] $ws6
-
-
 
 # Workspace 1 browser related
 #assign [class="Firefox|Vivaldi-stable|Vivaldi-snapshot|Opera"]                      → 1
@@ -461,7 +451,7 @@ assign [class="Chromium"] $ws6
 #assign [class="Vlc|vlc"]                                                            → 6
 
 # Workspace 7 virtual machines and settings
-#assign [class="Vmplayer|VirtualBox"]					 → 7
+#assign [class="Vmplayer|VirtualBox"]												 → 7
 
 # Workspace 8 file managers
 #assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"]                                 → 8
@@ -843,7 +833,7 @@ bindsym $mod+b bar mode toggle
 
 
 # Border control
-#hide_edge_borders both
+hide_edge_borders both
 bindsym $mod+shift+b exec --no-startup-id i3-msg border toggle
 
 #changing border style
@@ -884,7 +874,7 @@ popup_during_fullscreen smart
 # want it
 
 
-#for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 2
 gaps inner 5
 gaps outer 5
 #smart_gaps on
@@ -1037,17 +1027,17 @@ bar {
     ##STOP THEMING BAR
 
     ##START THEMING WM
-    #Theme name : ArcoLinux MDVfied
+    #Theme name : ArcoLinux Default
 
-    # Window color settings 
+    # Window color settings
     # class                 border  backgr. text    indicator
-    client.focused          #1F618D #1F618D #E5E5E5 #F7DC6F
-    client.unfocused        #222222 #222222 #F7DC6F #222222
-    client.focused_inactive #222222 #222222 #A9A9A9 #222222
-    client.placeholder      #222222 #222222 #AAAAAA #222222
-    client.urgent           #D42121 #D42121 #F7F7F7 #007777
+    client.focused          #6790EB #6790EB #e5e5e5 #6790EB
+    client.unfocused        #222222 #222222 #aaaaaa #222222
+    client.focused_inactive #222222 #222222 #a9a9a9 #222222
+    client.placeholder      #222222 #222222 #aaaaaa #222222
+    client.urgent           #d42121 #d42121 #f7f7f7 #d42121
 
-    client.background       #1f618d
+    client.background       #242424
 
     ##STOP THEMING WM
 

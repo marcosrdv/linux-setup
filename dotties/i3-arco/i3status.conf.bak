@@ -9,7 +9,7 @@
 general {
     colors = true
     interval = 5
-    separator = "  "
+    separator = " ⋯ "
     # ≀ ∙ ⋮  ⋯ ⟡ ⦙  ⦚
 }
 
@@ -22,7 +22,7 @@ order += "cpu_usage"
 #order += "load"
 order += "disk /home"
 #order += "volume master"
-#order += "battery 0"
+order += "battery 0"
 order += "time"
 
 
@@ -35,7 +35,6 @@ order += "time"
 cpu_temperature 0 {
         format = " %degrees °C "
         path = "/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp1_input"
-        # the above (TP E14) may vary for your specific systes -- check /sys/devices/platform/ ...
         #/sys/devices/platform/coretemp.0/hwmon/hwmon8/temp1_input"
 }
 
@@ -96,7 +95,7 @@ wireless wlan0 {
 ## battery sensor
 #battery 0 {
 #    #format = " %status %percentage %remaining "
-#    format = "  %percentage "
+#    format = "  %percentage "
 #    last_full_capacity = true
 #}
 
