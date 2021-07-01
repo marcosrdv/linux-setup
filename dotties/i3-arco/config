@@ -435,7 +435,9 @@ assign [class="Mousepad"] $ws4
 assign [class="libreoffice*"] $ws5
 assign [class="firefox"] $ws6
 assign [class="Chromium"] $ws6
-
+assign [class="Thunderbird"] $ws7
+assign [class="Skype"] $ws8
+assign [class="Spotify*"] $ws9
 
 
 # Workspace 1 browser related
@@ -1027,10 +1029,10 @@ bar {
         separator  #666666
 
         # colorclass           border  backgr. text
-        focused_workspace     #a9a9a9 #5f676a #eeeeee
-        active_workspace      #a9a9a9 #5f676a #eeeeee
-        inactive_workspace    #a9a9a9 #222222 #a9a9a9
-        urgent_workspace      #a9a9a9 #d42121 #FFFFFF
+        focused_workspace     #A9A9A9 #FFC300 #1a5276
+        active_workspace      #1F618D #5f676a #FFC300
+        inactive_workspace    #1F618D #222222 #FFC300
+        urgent_workspace      #FFC300 #C70039 #DAF7A6
         }
 
     }
