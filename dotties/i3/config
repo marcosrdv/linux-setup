@@ -9,10 +9,10 @@ set $mod Mod4
 workspace_layout default
 
 #border indicator on windows: 
-new_window pixel 2
+#new_window pixel 2
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border pixel 2
+default_border normal
 default_floating_border normal
 
 # Hide borders
