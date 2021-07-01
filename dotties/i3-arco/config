@@ -433,12 +433,13 @@ assign [class="Pcmanfm"] $ws2
 assign [class="Geany"] $ws3
 assign [class="Mousepad"] $ws4
 assign [class="libreoffice*"] $ws5
-assign [class="firefox"] $ws6
+#assign [class="Firefox"] $ws6
 assign [class="Chromium"] $ws6
 assign [class="Thunderbird"] $ws7
 assign [class="Skype"] $ws8
-assign [class="Spotify*"] $ws9
-
+#assign [class="Spotify"] $ws9
+for_window [class="Spotify"] move to workspace $ws9
+for_window [class="firefox"] move to workspace $ws6
 
 # Workspace 1 browser related
 #assign [class="Firefox|Vivaldi-stable|Vivaldi-snapshot|Opera"]                      → 1

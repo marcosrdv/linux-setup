@@ -1,4 +1,4 @@
-#############################################################################
+n#############################################################################
 # i3 config file (v4)														#
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!	#
 
@@ -205,8 +205,13 @@ assign [class="Pcmanfm"] $ws2
 assign [class="Geany"] $ws3
 assign [class="Mousepad"] $ws4
 assign [class="libreoffice*"] $ws5
-assign [class="firefox"] $ws6
+#assign [class="Firefox"] $ws6
 assign [class="Chromium"] $ws6
+assign [class="Thunderbird"] $ws7
+assign [class="Skype"] $ws8
+#assign [class="Spotify"] $ws9
+for_window [class="Spotify"] move to workspace $ws9
+for_window [class="firefox"] move to workspace $ws6
 
 
 
@@ -384,6 +389,39 @@ bindsym $mod+m bar mode toggle
   client.placeholder      #000000 #0c0c0c #ffffff #000000 
 
   client.background       #1f618d 
+
+    # i3 bar colors
+    # variable border background Text
+
+#    colors {
+#        background #2F2F2F
+#        statusline #eeeeee
+#        separator  #666666
+
+        # colorclass           border  backgr. text
+#        focused_workspace     #A9A9A9 #FFC300 #1a5276
+#        active_workspace      #1F618D #5f676a #FFC300
+#        inactive_workspace    #1F618D #222222 #FFC300
+#        urgent_workspace      #FFC300 #C70039 #DAF7A6
+#        }
+
+#    }
+    ##STOP THEMING BAR
+
+    ##START THEMING WM
+ 
+    # Window color settings 
+    # class                 border  backgr. text    indicator
+#    client.focused          #1F618D #1F618D #E5E5E5 #F7DC6F
+#    client.unfocused        #222222 #222222 #F7DC6F #222222
+#    client.focused_inactive #222222 #222222 #A9A9A9 #222222
+#    client.placeholder      #222222 #222222 #AAAAAA #222222
+#    client.urgent           #D42121 #D42121 #F7F7F7 #007777
+
+#    client.background       #1f618d
+
+    ##STOP THEMING WM
+
 
 #############################
 ### settings for i3-gaps: ###
