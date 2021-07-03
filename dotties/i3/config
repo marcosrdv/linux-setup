@@ -39,7 +39,8 @@ bindsym $mod+Return exec terminal
 bindsym $mod+q kill
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id dmenu_recency -b -h 26 -fn 'terminus-font:medium:pixelsize=20'
+bindsym $mod+d exec --no-startup-id dmenu_recency -b -h 30 -fn 'Inconsolata 20'
+#bindsym $mod+d exec --no-startup-id dmenu_recency -b -h 26 -fn 'terminus-font:medium:pixelsize=20'
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
