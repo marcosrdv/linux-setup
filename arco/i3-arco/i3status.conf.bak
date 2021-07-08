@@ -9,20 +9,17 @@
 general {
     colors = true
     interval = 5
-    separator = " ⋯ "
-    # ≀ ∙ ⋮  ⋯ ⟡ ⦙  ⦚
 }
 
 ###################
 # START AND ORDER #
 ###################
 
-order += "cpu_temperature 0"
+#order += "cpu_temperature 0"
 order += "cpu_usage"
-#order += "load"
-order += "disk /home"
-#order += "volume master"
-order += "battery 0"
+order += "load"
+order += "disk /"
+order += "volume master"
 order += "time"
 
 
@@ -33,15 +30,14 @@ order += "time"
 
 ##CPU temperature
 cpu_temperature 0 {
-        format = " %degrees °C "
-        path = "/sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp1_input"
-        #/sys/devices/platform/coretemp.0/hwmon/hwmon8/temp1_input"
+        format = "Temp: %degrees °C"
+        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input"
 }
 
 
 ## CPU sensor
 cpu_usage {
-    format = "  %usage "
+    format = "%usage"
 }
 
 ## system load sensor
@@ -51,14 +47,14 @@ load {
 
 ## HDD sensor
 disk "/" {
-    format = "  %free "
+    format = "%free"
 }
 
 
 ## audio volume sensor
 volume master {
-    format = "  %volume "
-    format_muted = "  "
+    format = "♪: %volume"
+    format_muted = "♪: muted (%volume)"
     device = "default"
     mixer = "Master"
     mixer_idx = 0
@@ -66,7 +62,7 @@ volume master {
 
 ## time format
 time {
-    format = "  %d.%m.%Y  %H:%M "
+    format = "%d.%m.%Y %H:%M"
 }
 
 ########################################################################
@@ -93,24 +89,9 @@ wireless wlan0 {
 
 
 ## battery sensor
-#battery 0 {
-#    #format = " %status %percentage %remaining "
-#    format = "  %percentage "
-#    last_full_capacity = true
-#}
-
 battery 0 {
     format = "%status %percentage %remaining"
-    format_down = ""
     last_full_capacity = true
-    integer_battery_capacity = true
-    low_threshold = 15
-    threshold_type = percentage
-    hide_seconds = true
-    status_chr = " "
-    status_bat = " "
-    status_unk = " "
-    status_full = " "
 }
 
 ## DHCP sensor
@@ -121,5 +102,5 @@ run_watch DHCP {
 
 ## HDD sensor
 disk "/home" {
-    format = "  %free "
+    format = "%free"
 }
