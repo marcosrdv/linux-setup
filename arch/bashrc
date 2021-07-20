@@ -1,0 +1,24 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+#alias ls='ls --color=auto'
+#PS1='[\u@\h \W] \$ '
+
+export PS1="\[\e[93m\][\[\e[0;35m\] • \D{%d-%m-%Y} • \A • \[\e[m\]\[\e[92m\]\u\[\e[m\]\[\e[93m\]@\[\e[m\]\[\e[94m\]\h\[\e[m\] \w \[\e[93m\]]\[\e[m\]\[\e[91m\]\\$\[\e[m\] "
+
+alias ll='lsd -lah'
+alias up='cd ..'
+alias del='rm -R'
+alias sync='rsync -uva'
+alias untgz='tar xvzf'
+alias updt='sudo pacman -Syyu'
+alias inst='sudo pacman -Sy --needed --noconfirm'
+alias srch='sudo pacman -Ss'
+alias v='nvim'
+
+clear
+neofetch
