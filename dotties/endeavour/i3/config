@@ -333,6 +333,7 @@ assign [class="Image Viewer"] $ws9
 assign [class="GNU Image Manipulation Program"] $ws9
 assign [class="mpv"] $ws9
 assign [class="vlc"] $ws9
+assign [class="feh"] $ws9
 assign [class="vokoscreenNG"] $ws9
 assign [class="SimpleScreenRecorder"] $ws9
 assign [class="Audacious"] $ws10
