@@ -36,7 +36,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 exec picom -cgb --vsync &
-nitrogen --restore &
+exec nitrogen --restore &
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -57,6 +57,10 @@ bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+q kill
+
+# firefox web browser
+bindsym $mod+` exec firefox
+
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run -b -fn "Hack-14" 
@@ -174,7 +178,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+x exec "i3-nagbar -t warning -m 'Exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit' -f 'pango:hack 14'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
