@@ -1,0 +1,7 @@
+[shiftkey]
+name=GitHub Desktop
+baseurl=https://mirror.mwt.me/ghd/rpm
+enabled=1
+gpgcheck=0
+repo_gpgcheck=1
+gpgkey=https://mirror.mwt.me/ghd/gpgkey
