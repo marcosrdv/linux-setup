@@ -30,13 +30,15 @@ exec --no-startup-id dex-autostart --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork -i /home/marcos/Pictures/wallpapers/4279556.png
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 exec picom -cgb --vsync &
 exec nitrogen --restore &
+exec alacritty
+exec Thunar
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -59,7 +61,10 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+q kill
 
 # firefox web browser
-bindsym $mod+` exec firefox
+bindsym $mod+\ exec firefox
+
+# firefox lock screen
+bindsym $mod+Shift+x exec i3lock --nofork -e -i /home/marcos/Pictures/wallpapers/4279556.png
 
 
 # start dmenu (a program launcher)
