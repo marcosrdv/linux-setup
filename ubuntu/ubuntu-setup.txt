@@ -1,0 +1,10 @@
+# ubuntu
+
+#sudo nano /etc/fstab
+#sudo visudo
+sudo echo "vm.swappiness=10" | sudo tee -a /etc/sysctl.d/99-swappiness.conf
+sudo apt update && sudo apt upgrade -y
+sudo apt install openjdk-17-jdk openjdk-17-doc build-essential geany geany-plugins meld mc ranger rofi dmenu libreoffice chromium-browser umbrello dia dia-shapes fish zsh xterm neofetch cmatrix vim ipython3 jupyter thonny codeblocks bluefish git gitg htop evince ristretto ubuntu-restricted-extras ttf-mscorefonts-installer sed gawk python3-full ruby-full baobab tlp 
+
+# snap install acrordrdc intellij-idea-educational code spotify sublime-text chromium 
+
