@@ -1,6 +1,6 @@
 # addtions to .bashrc
 
-export PS1="\[\e[93m\][\[\e[0;35m\] • \D{%d-%m-%Y} • \A • \[\e[m\]\[\e[92m\]\u\[\e[m\]\[\e[93m\]@\[\e[m\]\[\e[94m\]\h\[\e[m\] \w \[\e[93m\]]\[\e[m\]\[\e[91m\]\\$\[\e[m\] "
+export PS1="\[\e[93m\][\[\e[m\]\[\e[92m\]\u\[\e[m\]\[\e[93m\]@\[\e[m\]\[\e[94m\]\h\[\e[m\] \w\[\e[93m\]]\[\e[m\]\[\e[91m\]\\$\[\e[m\] "
 
 alias ll='ls -lagh'
 alias up='cd ..'
