@@ -16,6 +16,12 @@ set $mod Mod4
 font pango:Hack 14
 title_align center
 
+# Configure Npx of space between windows and to the screen edges.
+gaps inner 8px
+
+# Configure an additional Npx of extra space to the screen edges,
+# for a total gap of 10px to the screen edges, and 5px between windows.
+#gaps outer 7px
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
