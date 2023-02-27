@@ -67,14 +67,18 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+q kill
 
 # firefox web browser
-bindsym $mod+\ exec firefox
+bindsym $mod+b exec firefox
 
-# firefox lock screen
+# start file browser
+bindsym $mod+t exec Thunar
+
+# lock screen
 bindsym $mod+Shift+x exec i3lock --nofork -e -i /home/marcos/Pictures/wallpapers/4279556.png
 
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run -b -fn "Hack-14" 
+#bindsym $mod+d exec --no-startup-id dmenu_run -b -fn "Hack-14" 
+bindsym $mod+d exec "rofi -modi drun,run -show drun"
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
