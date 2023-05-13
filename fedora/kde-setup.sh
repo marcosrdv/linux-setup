@@ -1,0 +1,2 @@
+sudo dnf install mc vim xpad zsh fish alacritty kitty openssh htop java-17-openjdk java-17-openjdk-javadoc ruby rust python3 pango mc ranger dmenu rofi python3-idle ipython3 python3-scipy python3-matplotlib python3-matplotlib-doc bluefish geany geany-themes neofetch codeblocks gh git-all git-gui texlive texmaker flameshot thonny dia libreoffice gimp cabextract screenkey recapp chromium transmission-qt tlp xsensors cpu-x p7zip p7zip-gui p7zip-plugins p7zip-doc ffmpeg-free terminus-fonts terminus-fonts-console fontawesome5-fonts-all powerline-fonts
+
